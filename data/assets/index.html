@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang=\"en\">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Loki</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <a class="navbar-brand" href="#">Loki</a>
+        <i class="fa fa-signal ml-auto"></i>
+        <button class="btn btn-warning ml-2" type="button"><i class="fa fa-repeat"></i></button>
+        <button class="btn btn-danger ml-2" type="submit"><i class="fa fa-power-off"></i></button>
+    </nav>
+
+    <div id="errors"></div>
+
+    <div class="container mt-2">
+        <div id="errors"></div>
+        <div class="card mb-2">
+            <div class="card-body p-0">
+                <div class="card-header"><i class="fa fa-th-list"></i> Scripts</div>
+                <div class="table-responsive">
+                    <table class="table">
+                        <tr class="table-danger">
+                            <td>stream.sh</td>
+                            <td>
+                                <button class="btn btn-outline-danger" type="button">
+                                    Aborted 22:13
+                                </button>
+                            </td>
+                            <td align="right">
+                                <div class="btn-group" role="group" aria-label="Actions">
+                                    <button class="btn btn-success ml-2" type="submit"><i class="fa fa-play"></i></button>
+                                    <button class="btn" type="submit" disabled><i class="fa fa-stop"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="table-success">
+                            <td>convert.sh</td>
+                            <td>
+                                <button class="btn btn-outline-success" type="button">
+                                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                                    <a></a>Running...
+                                </button>
+                            </td>
+                            <td align="right">
+                                <div class="btn-group" role="group" aria-label="Actions">
+                                    <button class="btn ml-2" type="submit" disabled><i class="fa fa-play"></i></button>
+                                    <button class="btn btn-danger" type="submit"><i class="fa fa-stop"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>motion.sh</td>
+                            <td>
+                                <button class="btn btn-outline-primary" type="button">
+                                    Finished 04:31
+                                </button>
+                            </td>
+                            <td align="right">
+                                <div class="btn-group" role="group" aria-label="Actions">
+                                    <button class="btn btn-success ml-2" type="submit"><i class="fa fa-play"></i></button>
+                                    <button class="btn" type="submit" disabled><i class="fa fa-stop"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-2">
+            <div class="card-body p-0">
+                <div class="card-header"><i class="fa fa-hdd-o"></i> Disk usage</div>
+                <div class="table-responsive text-nowrap">
+                    <table class="table">
+                        <tr>
+                            <th>Mount point</th>
+                            <th></th>
+                            <th>Total</th>
+                            <th>Left</th>
+                        </tr>
+                        <tr>
+                            <td>/home</td>
+                            <td class="w-75 align-middle">
+                                <div class="progress">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </td>
+                            <td align="right">100 G</td>
+                            <td align="right">75 G</td>
+                        </tr>
+                        <tr>
+                            <td>/media/Data</td>
+                            <td class="w-75 align-middle">
+                                <div class="progress">
+                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </td>
+                            <td align="right">2 T</td>
+                            <td align="right">3 G</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="list-group" id="features"></div>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="heimdall.js"></script>
+</body>
+</html>
