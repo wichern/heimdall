@@ -20,8 +20,8 @@ import (
 
 	"github.com/gorilla/mux"
 
-	"github.com/heimdall/filebuffer"
-	"github.com/heimdall/scriptrunner"
+	"github.com/wichern/heimdall/filebuffer"
+	"github.com/wichern/heimdall/scriptrunner"
 )
 
 var files = filebuffer.Get()
